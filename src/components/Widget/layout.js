@@ -12,7 +12,7 @@ const WidgetLayout = props => (
       `rcw-widget-container ${props.fullScreenMode ? 'rcw-full-screen' : ''} ${props.showChat ? 'rcw-opened' : ''}`
     }
   >
-    {props.showChat &&
+    
       <Conversation
         title={props.title}
         subtitle={props.subtitle}
@@ -26,7 +26,7 @@ const WidgetLayout = props => (
         autofocus={props.autofocus}
         titleAvatar={props.titleAvatar}
       />
-    }
+    
     {props.customLauncher ?
       props.customLauncher(props.onToggleConversation) :
       !props.fullScreenMode &&
